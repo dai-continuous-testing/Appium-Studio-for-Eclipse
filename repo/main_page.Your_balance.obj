@@ -1,0 +1,6 @@
+#Mon Jan 22 09:12:37 EET 2018
+json={"nodeName"\:"H1","visible"\:"true","hidden"\:"false","textContext"\:"Your balance is\:  100.00$ ","uniqueKeys"\:"nodeName,textContext,align,text","dumpElementType"\:"WEB","align"\:"center","onScreen"\:"true","top"\:"true","x"\:"86","width"\:"578","y"\:"308","text"\:"Your balance is\:  100.00$ ","height"\:"152"}
+context=WEB
+page=main_page
+by=xpath
+expression=//*[@text\='Your balance is\:  100.00$ ']

@@ -1,0 +1,6 @@
+#Mon Jan 22 09:50:30 EET 2018
+context=INSTRUMENTED
+json={"nodeName"\:"UIButtonLabel","visible"\:"true","hidden"\:"false","textContext"\:"Logout","knownSuperClass"\:"UILabel","uniqueKeys"\:"textContext,text,accessibilityLabel","dumpElementType"\:"INSTRUMENTED","textColor"\:"0x007AFF","enabled"\:"true","onScreen"\:"true","top"\:"true","alpha"\:"1","x"\:"324","width"\:"102","y"\:"868","text"\:"Logout","tag"\:"0","accessibilityLabel"\:"Logout","class"\:"UIButtonLabel","height"\:"36"}
+page=main_page
+by=xpath
+expression=//*[@accessibilityLabel\='Logout']

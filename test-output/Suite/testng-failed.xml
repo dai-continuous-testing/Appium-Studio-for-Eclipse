@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="deviceQuery" value="@os=&#039;android&#039;"/>
+  <test name="TestIOS(failed)" parallel="tests">
+    <parameter name="deviceQuery" value="@os=&#039;ios&#039;"/>
+    <classes>
+      <class name="com.experitest.auto.AndroidDemoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.experitest.auto.AndroidDemoTest -->
+      <class name="com.experitest.auto.IOSDemoTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.experitest.auto.IOSDemoTest -->
+    </classes>
+  </test> <!-- TestIOS(failed) -->
+  <test name="TestIOS2(failed)" parallel="tests">
+    <parameter name="deviceQuery" value="@os=&#039;ios&#039;"/>
+    <classes>
+      <class name="com.experitest.auto.AndroidDemoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.experitest.auto.AndroidDemoTest -->
+      <class name="com.experitest.auto.IOSDemoTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.experitest.auto.IOSDemoTest -->
+    </classes>
+  </test> <!-- TestIOS2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

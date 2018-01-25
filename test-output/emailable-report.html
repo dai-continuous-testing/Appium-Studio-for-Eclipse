@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">TestAndroid</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">18,837</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">TestIOS</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">91,013</td><td></td><td></td></tr><tr><td><a href="#t2">TestIOS2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">92,263</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">2</th><th class="num">202,113</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestAndroid &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.experitest.auto.AndroidDemoTest</td><td><a href="#m0">test</a></td><td rowspan="1">1516619013339</td><td rowspan="1">10</td></tr></tbody><tbody id="t1"><tr><th colspan="4">TestIOS &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.experitest.auto.IOSDemoTest</td><td><a href="#m1">test</a></td><td rowspan="1">1516619044902</td><td rowspan="1">43539</td></tr></tbody><tbody id="t2"><tr><th colspan="4">TestIOS2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.experitest.auto.IOSDemoTest</td><td><a href="#m2">test</a></td><td rowspan="1">1516619049859</td><td rowspan="1">39096</td></tr></tbody></table><h2>TestAndroid</h2><h3 id="m0">com.experitest.auto.AndroidDemoTest#test</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>TestIOS</h2><h3 id="m1">com.experitest.auto.IOSDemoTest#test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.xpath: //*[@text=&apos;Your balance is:  100.00$ &apos;]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SheliAshkenazi&apos;, ip: &apos;192.168.2.73&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.0.x, dontGoHomeOnQuit=true, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, dontGoHomeOnQuit=true, deviceQuery=@os=&apos;ios&apos;, instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=IOSDemoTest}, device.serialNumber=e306fb3224fe2fbef2d1eb60118ee4ad7b7bf902, device.version=10.3.3, deviceQuery=@os=&apos;ios&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=IOSDemoTest, device.screenSize=1536x2048, useKeystore=false, app=cloud:com.experitest.ExperiBank, cloudViewLink=http://releasecloud/agent-1/#/3WllcfX2dHy33dFH?1
+Picked up Grid Node (seetest_7786)
+Reserved Device : erez akri’s iPad#B0018, instrumentApp=true, device.manufacture=Apple, device.category=TABLET, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://192.168.2.114:8082/#/test/4, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPad mini 2, device.name=erez akriâ€™s iPad#B0018, projectName=, gridNodePort=7786, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-01-22_13-03-21-96e41dba-dde7-4d09-878a-2536b7166590
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.experitest.auto.IOSDemoTest.test(IOSDemoTest.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@text=&apos;Your balance is:  100.00$ &apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.97 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SheliAshkenazi&apos;, ip: &apos;192.168.2.73&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=10.0.x, dontGoHomeOnQuit=true, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, dontGoHomeOnQuit=true, deviceQuery=@os=&apos;ios&apos;, instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=IOSDemoTest}, device.serialNumber=e306fb3224fe2fbef2d1eb60118ee4ad7b7bf902, device.version=10.3.3, deviceQuery=@os=&apos;ios&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=IOSDemoTest, device.screenSize=1536x2048, useKeystore=false, app=cloud:com.experitest.ExperiBank, cloudViewLink=http://releasecloud/agent-1/#/3WllcfX2dHy33dFH?1
+Picked up Grid Node (seetest_7786)
+Reserved Device : erez akri’s iPad#B0018, instrumentApp=true, device.manufacture=Apple, device.category=TABLET, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://192.168.2.114:8082/#/test/4, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPad mini 2, device.name=erez akriâ€™s iPad#B0018, projectName=, gridNodePort=7786, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-01-22_13-03-21-96e41dba-dde7-4d09-878a-2536b7166590
+*** Element info: {Using=xpath, value=//*[@text=&apos;Your balance is:  100.00$ &apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 21 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>TestIOS2</h2><h3 id="m2">com.experitest.auto.IOSDemoTest#test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.xpath: //*[@text=&apos;Your balance is:  100.00$ &apos;]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SheliAshkenazi&apos;, ip: &apos;192.168.2.73&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=11.0.x, dontGoHomeOnQuit=true, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, dontGoHomeOnQuit=true, deviceQuery=@os=&apos;ios&apos;, instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=IOSDemoTest}, device.serialNumber=30ea1939099b89ebf97cbd3422770af6dc5ee295, device.version=11.0.3, deviceQuery=@os=&apos;ios&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=IOSDemoTest, device.screenSize=1536x2048, useKeystore=false, app=cloud:com.experitest.ExperiBank, cloudViewLink=http://releasecloud/agent-1/#/uMzoCmHwd0rttNF7?1
+Picked up Grid Node (seetest_7785)
+Reserved Device : navot D’s iPad#B0089, instrumentApp=true, device.manufacture=Apple, device.category=TABLET, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://192.168.2.114:8082/#/test/3, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPad Air 2, device.name=navot Dâ€™s iPad#B0089, projectName=, gridNodePort=7785, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-01-22_13-03-21-5bfa9cda-f4c8-4ac6-b63b-9f3fb09de723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.experitest.auto.IOSDemoTest.test(IOSDemoTest.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@text=&apos;Your balance is:  100.00$ &apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.71 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;SheliAshkenazi&apos;, ip: &apos;192.168.2.73&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=11.0.x, dontGoHomeOnQuit=true, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={app=cloud:com.experitest.ExperiBank, dontGoHomeOnQuit=true, deviceQuery=@os=&apos;ios&apos;, instrumentApp=true, bundleId=com.experitest.ExperiBank, reportDirectory=reports, reportFormat=xml, platformName=iOS, testName=IOSDemoTest}, device.serialNumber=30ea1939099b89ebf97cbd3422770af6dc5ee295, device.version=11.0.3, deviceQuery=@os=&apos;ios&apos;, automationName=XCUITest, reportDirectory=reports, autoWebview=false, platformName=iOS, testName=IOSDemoTest, device.screenSize=1536x2048, useKeystore=false, app=cloud:com.experitest.ExperiBank, cloudViewLink=http://releasecloud/agent-1/#/uMzoCmHwd0rttNF7?1
+Picked up Grid Node (seetest_7785)
+Reserved Device : navot D’s iPad#B0089, instrumentApp=true, device.manufacture=Apple, device.category=TABLET, bundleId=cloud:com.experitest.ExperiBank, autoDismissAlerts=false, reportUrl=http://192.168.2.114:8082/#/test/3, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPad Air 2, device.name=navot Dâ€™s iPad#B0089, projectName=, gridNodePort=7785, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-01-22_13-03-21-5bfa9cda-f4c8-4ac6-b63b-9f3fb09de723
+*** Element info: {Using=xpath, value=//*[@text=&apos;Your balance is:  100.00$ &apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 21 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

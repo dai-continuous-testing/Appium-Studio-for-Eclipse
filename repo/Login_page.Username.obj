@@ -1,0 +1,6 @@
+#Sun Jan 21 20:42:07 EET 2018
+context=INSTRUMENTED
+json={"nodeName"\:"UITextFieldLabel","visible"\:"true","hidden"\:"false","textContext"\:"Username","knownSuperClass"\:"UILabel","uniqueKeys"\:"textContext,text,accessibilityLabel","dumpElementType"\:"INSTRUMENTED","textColor"\:"0x000019","enabled"\:"true","onScreen"\:"true","top"\:"false","alpha"\:"1","x"\:"54","width"\:"642","y"\:"276","text"\:"Username","tag"\:"0","accessibilityLabel"\:"Username","class"\:"UITextFieldLabel","height"\:"34"}
+page=Login_page
+by=xpath
+expression=//*[@text\='Username' and @accessibilityLabel\='Username']
